@@ -15,3 +15,12 @@ linkElems = soup.select('.r a')
 numOpen = min(5, len(linkElems))
 for i in range(numOpen):
     webbrowser.open('http://google.com/' + linkElems[i].get('href'))
+
+
+# Get search keywords from command line arguments
+# Retrieve the search results page
+# Open a browser tab for each result
+# Read the command line arguments from sys.argv
+# Fetch the search result page with the requests module
+# Find the links to each search result
+# Call the webbrowser.open() to open the web browser
